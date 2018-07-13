@@ -1,0 +1,9 @@
+<echo-plex
+  #echoCmp
+  [signal]="signal"
+  (echoEmitted)="logEvent($event)"
+  >
+</echo-plex>
+
+<button (click)="setVal()">Change the Signal</button>
+<button (click)="setInterval(echoCmp)">Change the delay Interval</button>
